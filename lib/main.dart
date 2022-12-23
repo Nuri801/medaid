@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:medaid/components/dory_themes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,11 +12,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        fontFamily: "GmarketSansTTF",
-        primarySwatch: Colors.blue,
+      theme: DoryThemes.lightTheme,
+      home: const MyHomePage(
+        title: 'Flutter Demo Home Page',
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page', ),
+      builder: (context, child) => MediaQuery(
+        data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
+        child: child!,
+      ),
     );
   }
 }
@@ -48,7 +52,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              '시작합시다!!', style: TextStyle(fontSize: 35, fontWeight: FontWeight.w700),
+              '시작합시다!!',
+              style: TextStyle(fontSize: 35, fontWeight: FontWeight.w700),
             ),
             Text(
               '$_counter',
