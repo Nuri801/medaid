@@ -7,15 +7,24 @@ class DoryThemes {
         fontFamily: "GmarketSansTTF",
         scaffoldBackgroundColor: Colors.white,
         textTheme: _textTheme,
+        appBarTheme: _appBarTheme,
         splashColor: Colors.white,
         brightness: Brightness.light,
       );
   static ThemeData get darkTheme => ThemeData(
-    primarySwatch: DoryColors.primaryMaterialColor,
-    fontFamily: "GmarketSansTTF",
-    textTheme: _textTheme,
-    splashColor: Colors.white,
-    brightness: Brightness.dark,
+        primarySwatch: DoryColors.primaryMaterialColor,
+        fontFamily: "GmarketSansTTF",
+        textTheme: _textTheme,
+        splashColor: Colors.white,
+        brightness: Brightness.dark,
+      );
+
+  static const AppBarTheme _appBarTheme = AppBarTheme(
+    elevation: 0,
+    backgroundColor: Colors.white,
+    iconTheme: IconThemeData(
+      color: DoryColors.primaryColor,
+    ),
   );
 
   static const TextTheme _textTheme = TextTheme(
