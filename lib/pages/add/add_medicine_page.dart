@@ -22,15 +22,15 @@ class _AddPageState extends State<AddPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        leading: const CloseButton(),
-      ),
-      body: GestureDetector(
-        onTap: () {
-          FocusScope.of(context).unfocus();
-        },
-        child: Padding(
+    return GestureDetector(
+      onTap: () {
+        FocusScope.of(context).unfocus();
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          leading: const CloseButton(),
+        ),
+        body: Padding(
           padding: pagePadding,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -75,18 +75,18 @@ class _AddPageState extends State<AddPage> {
             ],
           ),
         ),
-      ),
-      bottomNavigationBar: SafeArea(
-        child: Padding(
-          padding: submitButtonBoxPadding,
-          child: SizedBox(
-            height: submitButtonHeight,
-            child: ElevatedButton(
-              onPressed: () {},
-              style: ElevatedButton.styleFrom(
-                textStyle: Theme.of(context).textTheme.subtitle1,
+        bottomNavigationBar: SafeArea(
+          child: Padding(
+            padding: submitButtonBoxPadding,
+            child: SizedBox(
+              height: submitButtonHeight,
+              child: ElevatedButton(
+                onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                  textStyle: Theme.of(context).textTheme.subtitle1,
+                ),
+                child: const Text('다음'),
               ),
-              child: const Text('다음'),
             ),
           ),
         ),
