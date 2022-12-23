@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:medaid/components/dory_colors.dart';
 import 'package:medaid/pages/today/today_page.dart';
-import 'add/add_page.dart';
+import 'add/add_medicine_page.dart';
 import 'history/history_page.dart';
 
 class HomePage extends StatefulWidget {
