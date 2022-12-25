@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:medaid/components/dory_constants.dart';
@@ -44,7 +43,9 @@ class _AddPageState extends State<AddPage> {
               Center(
                 child: CupertinoButton(
                   padding: EdgeInsets.zero,
-                  onPressed: () {},
+                  onPressed: () {
+
+                  },
                   child: const CircleAvatar(
                     radius: 40,
                     child: Icon(
