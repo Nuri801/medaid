@@ -15,8 +15,6 @@ class AddPage extends StatefulWidget {
 class _AddPageState extends State<AddPage> {
   final _nameController = TextEditingController();
 
-  var _pickedImage;
-
   @override
   void dispose() {
     _nameController.dispose();
@@ -44,71 +42,8 @@ class _AddPageState extends State<AddPage> {
                 style: Theme.of(context).textTheme.headline4,
               ),
               const SizedBox(height: largeSpace),
-              Center(
-                child: CircleAvatar(
-                  radius: 40,
-                  child: CupertinoButton(
-                    onPressed: () {
-                      showModalBottomSheet(
-                          context: context,
-                          builder: (context) {
-                            return SafeArea(
-                              child: Padding(
-                                padding: pagePadding,
-                                child: Column(
-                                  mainAxisSize: MainAxisSize.min,
-                                  children: [
-                                    TextButton(
-                                      onPressed: () {
-                                        Navigator.maybePop(context);
-                                        ImagePicker()
-                                            .pickImage(
-                                                source: ImageSource.camera)
-                                            .then((xfile) {
-                                          if (xfile != null) {
-                                            setState(() {
-                                              _pickedImage = File(xfile.path);
-                                            });
-                                          }
-                                        });
-                                      },
-                                      child: const Text('카메라로 활영'),
-                                    ),
-                                    TextButton(
-                                      onPressed: () {
-                                        Navigator.maybePop(context);
-                                        ImagePicker()
-                                            .pickImage(
-                                                source: ImageSource.gallery)
-                                            .then((xfile) {
-                                          if (xfile != null) {
-                                            setState(() {
-                                              _pickedImage = File(xfile.path);
-                                            });
-                                          }
-                                        });
-                                      },
-                                      child: const Text('앨범에서 가져오기'),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          });
-                    },
-                    padding: _pickedImage == null ? null : EdgeInsets.zero,
-                    child: _pickedImage == null
-                        ? const Icon(
-                            CupertinoIcons.photo_camera_solid,
-                            size: 30,
-                            color: Colors.white,
-                          )
-                        : CircleAvatar(
-                            radius: 40,
-                            foregroundImage: FileImage(_pickedImage!),
-                          ),
-                  ),
-                ),
+              const Center(
+                child: MedicineImageButton(),
               ),
               const SizedBox(height: largeSpace + regularSpace),
               Text(
@@ -144,6 +79,96 @@ class _AddPageState extends State<AddPage> {
               ),
             ),
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class MedicineImageButton extends StatefulWidget {
+  const MedicineImageButton({Key? key}) : super(key: key);
+
+  @override
+  State<MedicineImageButton> createState() => _MedicineImageButtonState();
+}
+
+class _MedicineImageButtonState extends State<MedicineImageButton> {
+  var _pickedImage;
+
+  @override
+  Widget build(BuildContext context) {
+    return CircleAvatar(
+      radius: 40,
+      child: CupertinoButton(
+        onPressed: _showModelBottomSheet,
+        padding: _pickedImage == null ? null : EdgeInsets.zero,
+        child: _pickedImage == null
+            ? const Icon(
+                CupertinoIcons.photo_camera_solid,
+                size: 30,
+                color: Colors.white,
+              )
+            : CircleAvatar(
+                radius: 40,
+                foregroundImage: FileImage(_pickedImage!),
+              ),
+      ),
+    );
+  }
+
+  void _showModelBottomSheet() {
+    showModalBottomSheet(
+      context: context,
+      builder: (context) {
+        return PickImageBottomSheet(
+          onPressedCamera: () => _onPressed(ImageSource.camera),
+          onPressedGallery: () => _onPressed(ImageSource.gallery),
+        );
+      },
+    );
+  }
+
+  void _onPressed(ImageSource source) {
+    Navigator.maybePop(context);
+    ImagePicker().pickImage(source: source).then(
+      (xfile) {
+        if (xfile != null) {
+          setState(
+            () {
+              _pickedImage = File(xfile.path);
+            },
+          );
+        }
+      },
+    );
+  }
+}
+
+class PickImageBottomSheet extends StatelessWidget {
+  const PickImageBottomSheet(
+      {Key? key, required this.onPressedCamera, required this.onPressedGallery})
+      : super(key: key);
+
+  final VoidCallback onPressedCamera;
+  final VoidCallback onPressedGallery;
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Padding(
+        padding: pagePadding,
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            TextButton(
+              onPressed: onPressedCamera,
+              child: const Text('카메라로 활영'),
+            ),
+            TextButton(
+              onPressed: onPressedGallery,
+              child: const Text('앨범에서 가져오기'),
+            ),
+          ],
         ),
       ),
     );
