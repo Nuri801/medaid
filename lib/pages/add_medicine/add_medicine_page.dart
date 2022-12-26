@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:medaid/components/dory_constants.dart';
+import 'package:medaid/components/dory_page_route.dart';
 import 'package:medaid/pages/add_medicine/add_alarm_page.dart';
 
 class AddMedicinePage extends StatefulWidget {
@@ -95,8 +96,8 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   void _onAddAlarmPage() {
     Navigator.push(
       context,
-      MaterialPageRoute(
-        builder: (context) => AddAlarmPage(
+      FadePageRoute(
+        page: AddAlarmPage(
           medicineImage: _medicineImage,
           medicineName: _nameController.text,
         ),
@@ -106,7 +107,8 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
 }
 
 class MedicineImageButton extends StatefulWidget {
-  const MedicineImageButton({Key? key, required this.changedImageFile}) : super(key: key);
+  const MedicineImageButton({Key? key, required this.changedImageFile})
+      : super(key: key);
 
   final ValueChanged<File?> changedImageFile;
 
