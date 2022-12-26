@@ -49,14 +49,52 @@ class _AddPageState extends State<AddPage> {
                   radius: 40,
                   child: CupertinoButton(
                     onPressed: () {
-                      ImagePicker()
-                          .pickImage(source: ImageSource.gallery)
-                          .then((xfile) {
-                        if (xfile == null) return;
-                        setState(() {
-                          _pickedImage = File(xfile.path);
-                        });
-                      });
+                      showModalBottomSheet(
+                          context: context,
+                          builder: (context) {
+                            return SafeArea(
+                              child: Padding(
+                                padding: pagePadding,
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    TextButton(
+                                      onPressed: () {
+                                        Navigator.maybePop(context);
+                                        ImagePicker()
+                                            .pickImage(
+                                                source: ImageSource.camera)
+                                            .then((xfile) {
+                                          if (xfile != null) {
+                                            setState(() {
+                                              _pickedImage = File(xfile.path);
+                                            });
+                                          }
+                                        });
+                                      },
+                                      child: const Text('카메라로 활영'),
+                                    ),
+                                    TextButton(
+                                      onPressed: () {
+                                        Navigator.maybePop(context);
+                                        ImagePicker()
+                                            .pickImage(
+                                                source: ImageSource.gallery)
+                                            .then((xfile) {
+                                          if (xfile != null) {
+                                            setState(() {
+                                              _pickedImage = File(xfile.path);
+                                            });
+                                          }
+                                        });
+                                      },
+                                      child: const Text('앨범에서 가져오기'),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            );
+                          });
                     },
                     padding: _pickedImage == null ? null : EdgeInsets.zero,
                     child: _pickedImage == null
