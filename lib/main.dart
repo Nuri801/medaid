@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'MedAid',
       theme: DoryThemes.lightTheme,
       home: const HomePage(),
       builder: (context, child) => MediaQuery(

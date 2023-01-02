@@ -1,6 +1,7 @@
 import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../../components/dory_constants.dart';
 
 class AddAlarmPage extends StatelessWidget {
   const AddAlarmPage({
@@ -15,14 +16,28 @@ class AddAlarmPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blue,
+      appBar: AppBar(
+      ),
       body: SafeArea(
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              medicineImage == null ? Container() : Image.file(medicineImage!),
-              Text(medicineName),
-            ],
+        child: Column(
+          children: [
+            medicineImage == null ? Container() : Image.file(medicineImage!),
+            Text(medicineName),
+          ],
+        ),
+      ),
+      bottomNavigationBar: SafeArea(
+        child: Padding(
+          padding: submitButtonBoxPadding,
+          child: SizedBox(
+            height: submitButtonHeight,
+            child: ElevatedButton(
+              onPressed:(){},
+              style: ElevatedButton.styleFrom(
+                textStyle: Theme.of(context).textTheme.subtitle1,
+              ),
+              child: const Text('완료'),
+            ),
           ),
         ),
       ),
