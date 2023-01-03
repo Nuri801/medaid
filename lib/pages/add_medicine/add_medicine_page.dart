@@ -95,8 +95,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
     );
   }
 
-
-
   void _onAddAlarmPage() {
     Navigator.push(
       context,
