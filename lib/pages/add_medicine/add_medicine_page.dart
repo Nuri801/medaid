@@ -24,8 +24,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
     super.dispose();
   }
 
-
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
