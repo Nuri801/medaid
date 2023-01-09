@@ -106,8 +106,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   }
 }
 
-
-
 class MedicineImageButton extends StatefulWidget {
   const MedicineImageButton({Key? key, required this.changedImageFile})
       : super(key: key);
@@ -141,6 +139,8 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
       ),
     );
   }
+
+
 
   void _showModelBottomSheet() {
     showModalBottomSheet(
