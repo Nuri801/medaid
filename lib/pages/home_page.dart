@@ -60,9 +60,6 @@ class _HomePageState extends State<HomePage> {
                         : Colors.grey,
                   ),
                 ),
-
-
-
                 CupertinoButton(
                   onPressed: () => _onCurrentPage(1),
                   child: Icon(
@@ -83,9 +80,6 @@ class _HomePageState extends State<HomePage> {
       _currentIndex = pageIndex;
     });
   }
-
-
-
   void _onAddMedicine () {
     Navigator.push(
       context,
