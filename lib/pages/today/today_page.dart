@@ -6,10 +6,6 @@ class TodayPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: Container(
-        color: Colors.grey,
-        height: 20,
-      ),
       color: Colors.grey,
     );
   }
