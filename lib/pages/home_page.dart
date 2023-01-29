@@ -60,6 +60,7 @@ class _HomePageState extends State<HomePage> {
                         : Colors.grey,
                   ),
                 ),
+                SizedBox(height: 10,),
                 CupertinoButton(
                   onPressed: () => _onCurrentPage(1),
                   child: Icon(
