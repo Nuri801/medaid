@@ -86,9 +86,6 @@ class _HomePageState extends State<HomePage> {
     Navigator.push(
       context,
       FadePageRoute(page: AddMedicinePage()),
-      // MaterialPageRoute(
-      //   builder: (context) => const AddMedicinePage(),
-      // ),
     );
   }
 }
