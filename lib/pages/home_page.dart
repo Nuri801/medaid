@@ -44,52 +44,51 @@ class _HomePageState extends State<HomePage> {
 
   BottomAppBar _buildBottomAppBar() {
     return BottomAppBar(
-          elevation: 0,
-          child: Container(
-            height: kBottomNavigationBarHeight,
-            color: Colors.white,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                CupertinoButton(
-                  onPressed: () => _onCurrentPage(0),
-                  child: Icon(
-                    CupertinoIcons.checkmark,
-                    color: _currentIndex == 0
-                        ? DoryColors.primaryColor
-                        : Colors.grey,
-                  ),
-                ),
-                SizedBox(height: 10,),
-                CupertinoButton(
-                  onPressed: () => _onCurrentPage(1),
-                  child: Icon(
-                    CupertinoIcons.text_badge_checkmark,
-                    color: _currentIndex == 1
-                        ? DoryColors.primaryColor
-                        : Colors.grey,
-                  ),
-                )
-              ],
+      elevation: 0,
+      child: Container(
+        height: kBottomNavigationBarHeight,
+        color: Colors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            CupertinoButton(
+              onPressed: () => _onCurrentPage(0),
+              child: Icon(
+                CupertinoIcons.checkmark,
+                color:
+                    _currentIndex == 0 ? DoryColors.primaryColor : Colors.grey,
+              ),
             ),
-          ),
-        );
+            SizedBox(
+              height: 10,
+            ),
+            CupertinoButton(
+              onPressed: () => _onCurrentPage(1),
+              child: Icon(
+                CupertinoIcons.text_badge_checkmark,
+                color:
+                    _currentIndex == 1 ? DoryColors.primaryColor : Colors.grey,
+              ),
+            )
+          ],
+        ),
+      ),
+    );
   }
 
-
-  void _onCurrentPage(int pageIndex){
+  void _onCurrentPage(int pageIndex) {
     setState(() {
       _currentIndex = pageIndex;
     });
   }
-  void _onAddMedicine () {
+
+  void _onAddMedicine() {
     Navigator.push(
       context,
-      FadePageRoute(page: AddMedicinePage())
+      FadePageRoute(page: AddMedicinePage()),
       // MaterialPageRoute(
       //   builder: (context) => const AddMedicinePage(),
       // ),
     );
   }
-
 }
