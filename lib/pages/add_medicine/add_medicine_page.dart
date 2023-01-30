@@ -29,7 +29,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
     return GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
-        print('going to unfocus');
+        print('unfocusing');
       },
       child: Scaffold(
         appBar: AppBar(
