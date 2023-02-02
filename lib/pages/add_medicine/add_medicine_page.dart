@@ -46,7 +46,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
             children: [
               // const SizedBox(height: largeSpace),
               Text(
-                '어떤 약이예요?',
+                '어떤 약이예요 ?',
                 style: Theme.of(context).textTheme.headline4,
               ),
               const SizedBox(height: largeSpace),
