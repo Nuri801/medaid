@@ -59,7 +59,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
               ),
               const SizedBox(height: largeSpace + regularSpace),
               Text(
-                '약 이름',
+                '약 이름 ',
                 style: Theme.of(context).textTheme.subtitle1,
               ),
               TextFormField(
