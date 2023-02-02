@@ -14,6 +14,8 @@ class AddMedicinePage extends StatefulWidget {
   State<AddMedicinePage> createState() => _AddMedicinePageState();
 }
 
+
+
 class _AddMedicinePageState extends State<AddMedicinePage> {
   final _nameController = TextEditingController();
   File? _medicineImage;
