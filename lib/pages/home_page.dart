@@ -54,6 +54,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             CupertinoButton(
+
               onPressed: () => _onCurrentPage(0),
               child: Icon(
                 CupertinoIcons.checkmark,
