@@ -57,6 +57,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
                   },
                 ),
               ),
+
               const SizedBox(height: largeSpace + regularSpace),
               Text(
                 '약 이름 ',
