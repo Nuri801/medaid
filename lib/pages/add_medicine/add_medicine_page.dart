@@ -20,8 +20,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   final _nameController = TextEditingController();
   File? _medicineImage;
 
-
-
   @override
   void dispose() {
     _nameController.dispose();
