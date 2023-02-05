@@ -47,7 +47,6 @@ class _HomePageState extends State<HomePage> {
     return BottomAppBar(
       elevation: 0,
       child: Container(
-
         height: kBottomNavigationBarHeight,
         color: Colors.white,
         child: Row(
@@ -78,8 +77,6 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
-
-
 
   void _onCurrentPage(int pageIndex) {
     setState(() {
