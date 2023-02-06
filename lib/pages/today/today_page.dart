@@ -7,7 +7,7 @@ class TodayPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
 
-      color: Colors.grey,
+      color: Colors.red
 
     );
   }
