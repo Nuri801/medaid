@@ -71,6 +71,7 @@ class _HomeScreenState extends State<HomeScreen> {
   // In other words, this means the user has reached the bottom of the list view
   double? _maxOffset;
 
+
   @override
   void initState() {
     _controller.addListener(() {
