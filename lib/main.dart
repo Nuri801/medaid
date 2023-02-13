@@ -63,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
   // The controller that is assigned to the list view
   final ScrollController _controller = ScrollController();
 
+
   // The scroll offset
   double _scrollOffset = 0;
 
