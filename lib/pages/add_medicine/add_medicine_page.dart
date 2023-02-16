@@ -73,7 +73,9 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
                   hintStyle: Theme.of(context).textTheme.bodyText2,
                   contentPadding: textFieldContentPadding,
                 ),
+
                 onChanged: (_) => setState(() {}),
+
               ),
             ],
           ),
