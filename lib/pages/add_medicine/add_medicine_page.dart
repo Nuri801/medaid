@@ -33,7 +33,9 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
       },
       child: Scaffold(
         appBar: AppBar(
+
           leading: const CloseButton(),
+
         ),
         body: Padding(
           padding: pagePadding,
