@@ -26,6 +26,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return GestureDetector(
       onTap: () {
         FocusScope.of(context).unfocus();
