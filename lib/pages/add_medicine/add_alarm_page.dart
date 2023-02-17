@@ -108,7 +108,7 @@ class AddAlarmPage extends StatelessWidget {
       child: SafeArea(
         child: Padding(
           padding: EdgeInsets.symmetric(
-            horizontal: 20,
+            horizontal: 19,
           ),
           child: Container(
             height: deviceHeight,
