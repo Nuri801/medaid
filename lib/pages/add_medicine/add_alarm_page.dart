@@ -54,26 +54,78 @@ class AddAlarmPage extends StatelessWidget {
   // }
 
   Widget pageUI() {
-    return SafeArea(
-      child: Padding(
-        padding: EdgeInsets.symmetric(
-          horizontal: 20,
-        ),
-        child: Container(
-          height: deviceHeight,
-          width: deviceWidth,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            mainAxisSize: MainAxisSize.max,
-            children: [
-              Container(
-                color: Colors.deepOrange,
-                width: deviceWidth,
-                height: 20,
-              )
+    return WillPopScope(
+      onWillPop: () async {
+        if (!mainController.firstPress) {
+          firstPressTime = DateTime.now();
 
-            ],
+          print("first time press: $firstPressTime");
+
+          var snackBar = const SnackBar(
+            duration: Duration(seconds: 2),
+            content: Center(
+              child: Text('press another time to exit from app'),
+            ),
+          );
+          ScaffoldMessenger.of(context).showSnackBar(snackBar);
+
+          mainController.firstPress = true;
+          mainController.secondPress = true;
+          return Future.value(false);
+        }
+
+        if (mainController.secondPress) {
+          secondPressTime = DateTime.now();
+          if (kDebugMode) {
+            print("secondTime press: $secondPressTime");
+          }
+
+          final difference = secondPressTime.difference(firstPressTime);
+          if (kDebugMode) {
+            print("time difference: $difference");
+          }
+
+          if (difference.inSeconds < 2) {
+            mainController.firstPress = false;
+            mainController.secondPress = false;
+            return Future.value(true);
+          } else {
+            var snackBar = const SnackBar(
+              duration: Duration(seconds: 2),
+              content: Center(
+                child: Text('press another time to exit from app'),
+              ),
+            );
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+            mainController.firstPress = false;
+            mainController.secondPress = false;
+            return Future.value(false);
+          }
+        }
+        mainController.secondPress = true;
+        return Future.value(false);
+      },
+      child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.symmetric(
+            horizontal: 20,
+          ),
+          child: Container(
+            height: deviceHeight,
+            width: deviceWidth,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Container(
+                  color: Colors.deepOrange,
+                  width: deviceWidth,
+                  height: 20,
+                )
+
+              ],
+            ),
           ),
         ),
       ),
