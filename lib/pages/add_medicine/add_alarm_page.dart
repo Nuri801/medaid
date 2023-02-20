@@ -22,6 +22,7 @@ class AddAlarmPage extends StatelessWidget {
     deviceWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
+
       appBar: AppBar(),
       body: pageUI(),
       bottomNavigationBar: SafeArea(
@@ -40,6 +41,7 @@ class AddAlarmPage extends StatelessWidget {
         ),
       ),
     );
+
   }
 
   Widget pageUI() {
