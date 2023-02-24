@@ -164,6 +164,7 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
   }
 
   void _onPressed(ImageSource source) {
+
     Navigator.maybePop(context);
     ImagePicker().pickImage(source: source).then(
       (xfile) {
@@ -178,6 +179,7 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
       },
     );
   }
+
 }
 
 class PickImageBottomSheet extends StatelessWidget {
