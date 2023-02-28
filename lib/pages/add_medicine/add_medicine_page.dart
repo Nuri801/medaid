@@ -126,6 +126,7 @@ class MedicineImageButton extends StatefulWidget {
 }
 
 class _MedicineImageButtonState extends State<MedicineImageButton> {
+
   var _pickedImage;
 
   @override
@@ -148,6 +149,7 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
               ),
       ),
     );
+
   }
 
   void _showModelBottomSheet() {
