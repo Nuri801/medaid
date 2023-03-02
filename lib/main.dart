@@ -285,6 +285,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Connectivity example app'),
@@ -292,6 +293,6 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
           child: Text('Connection Status: ${_connectionStatus.toString()}')),
     );
-  }o
+  }
 
 }
