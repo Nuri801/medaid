@@ -278,11 +278,9 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   Future<void> _updateConnectionStatus(ConnectivityResult result) async {
-
     setState(() {
       _connectionStatus = result;
     });
-
   }
 
   @override
