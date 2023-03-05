@@ -252,8 +252,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   void dispose() {
+
     _connectivitySubscription.cancel();
     super.dispose();
+
   }
 
   // Platform messages are asynchronous, so we initialize in an async method.
