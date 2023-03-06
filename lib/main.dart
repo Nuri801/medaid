@@ -246,7 +246,6 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     initConnectivity();
-
     _connectivitySubscription =
         _connectivity.onConnectivityChanged.listen(_updateConnectionStatus);
   }
