@@ -288,7 +288,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Connectivity example app'),
+        title: const Text('Connectivity example'),
       ),
       body: Center(
           child: Text('Connection Status: ${_connectionStatus.toString()}')),
