@@ -187,10 +187,8 @@ class PickImageBottomSheet extends StatelessWidget {
   const PickImageBottomSheet(
       {Key? key, required this.onPressedCamera, required this.onPressedGallery})
       : super(key: key);
-
   final VoidCallback onPressedCamera;
   final VoidCallback onPressedGallery;
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(
