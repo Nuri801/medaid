@@ -133,6 +133,7 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
   Widget build(BuildContext context) {
 
     return CircleAvatar(
+
       radius: 40,
       child: CupertinoButton(
         onPressed: _showModelBottomSheet,
