@@ -126,12 +126,10 @@ class MedicineImageButton extends StatefulWidget {
 }
 
 class _MedicineImageButtonState extends State<MedicineImageButton> {
-
   var _pickedImage;
 
   @override
   Widget build(BuildContext context) {
-
     return CircleAvatar(
 
       radius: 40,
