@@ -211,3 +211,124 @@ class PickImageBottomSheet extends StatelessWidget {
     );
   }
 }
+
+/// Auth key old methods:
+
+// Future<void> getAuthKey() async {
+//   String facilityNumb = equipmentList[curSelectedEquipIndex.value]['facilityNum'];
+//   setAuthKeyButtonInUse(true);
+//   var curTime = DateTime.now();
+//   if (kDebugMode) {
+//     print('+++ curTime : $curTime, authTime : $authTime');
+//   }
+//   if (authTime != null) {
+//     Duration diff = curTime.difference(authTime!);
+//     var diffMinutes = diff.inMinutes;
+//
+//     if (kDebugMode) {
+//       print('+++ diffMinutes : $diffMinutes');
+//     }
+//
+//     if (authKey.value != '--------' && diffMinutes <= 60) {
+//       if (kDebugMode) {
+//         print('+++ under 1 hour');
+//       }
+//
+//       setShowIndicator(true);
+//
+//       Fluttertoast.showToast(
+//         msg: 'auth_key_inform'.tr(),
+//         toastLength: Toast.LENGTH_LONG,
+//         gravity: ToastGravity.BOTTOM,
+//         timeInSecForIosWeb: 2,
+//         backgroundColor: Colors.white,
+//         textColor: kBlackColor,
+//         fontSize: 14,
+//       );
+//     }
+//   }
+//   if (kDebugMode) {
+//     print('+++ getAuthKey:selectedEquipmentFacilityNumber : $selectedEquipmentFacilityNumber.value');
+//   }
+//
+//   final response = await dioHTTPService.post(
+//     path: '/equip/issue_reg_key',
+//     body: {
+//       "facilityNum": facilityNumb,
+//     },
+//   );
+//
+//   if (kDebugMode) {
+//     print('+++ auth key response : $response');
+//   }
+//
+//   if (response == null) {
+//     setAuthKeyButtonInUse(false);
+//     return;
+//   }
+//
+//   var responseCode = response.data['code'];
+//
+//   if (responseCode == successCode) {
+//     var regKey = response.data['regKey'];
+//
+//     if (kDebugMode) {
+//       print('+++ auth key : $regKey');
+//     }
+//
+//     setAuthKey(regKey);
+//
+//     authTime = DateTime.now();
+//
+//     setShowIndicator(true);
+//
+//     //====== 장비인증 진행상태 확인 API call=================
+//     checkAuthStatus();
+//     //=================================================
+//   } else {
+//     showErrorMsg(int.parse(responseCode), response.data['msg']);
+//     setAuthKeyButtonInUse(false);
+//   }
+// }
+//
+// Future<void> checkAuthStatus() async {
+//   String facilityNumb = equipmentList[curSelectedEquipIndex.value]['facilityNum'];
+//   if (kDebugMode) {
+//     print('+++ checkAuthStatus:selectedEquipmentFacilityNumber : $facilityNumb');
+//   }
+//
+//   final response = await dioHTTPService.post(
+//     path: '/equip/check_reg_status',
+//     body: {
+//       "facilityNum": facilityNumb,
+//       "regKey": authKey.value,
+//     },
+//   );
+//
+//   if (kDebugMode) {
+//     print('+++ checkAuthStatus response : $response');
+//   }
+//
+//   var responseCode = response?.data['code'];
+//
+//   if (responseCode == successCode) {
+//     // 등록 완료
+//     var facilityNum = response?.data['data']['facilityNum'];
+//     var regAuthYn = response?.data['data']['regAuthYn'];
+//     var notiMsgAgreeYn = response?.data['data']['notiMsgAgreeYn'];
+//
+//     if (kDebugMode) {
+//       print(
+//           '+++ auth key result:facilityNum : $facilityNum, regAuthYn : $regAuthYn, notiMsgAgreeYn : $notiMsgAgreeYn');
+//     }
+//
+//     setNUpdateSelectedEquipment(facilityNum, regAuthYn, notiMsgAgreeYn);
+//     showAuthSuccessPopup();
+//   } else {
+//     // Fail
+//     showAuthFailPopup();
+//   }
+//
+//   setShowIndicator(false);
+//   setAuthKeyButtonInUse(false);
+// }
