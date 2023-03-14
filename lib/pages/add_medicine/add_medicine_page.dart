@@ -102,7 +102,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   }
 
   void _onAddAlarmPage() {
-
     Navigator.push(
       context,
       FadePageRoute(
@@ -113,7 +112,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
       ),
     );
   }
-
 }
 
 class MedicineImageButton extends StatefulWidget {
