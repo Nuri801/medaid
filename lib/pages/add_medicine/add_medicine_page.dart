@@ -149,8 +149,6 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
     );
   }
 
-
-
   void _showModelBottomSheet() {
     showModalBottomSheet(
       context: context,
