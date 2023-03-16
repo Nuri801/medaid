@@ -331,25 +331,3 @@ class PickImageBottomSheet extends StatelessWidget {
 //   setShowIndicator(false);
 //   setAuthKeyButtonInUse(false);
 // }
-
-
-if (selectedEquipmentDetails['regAuthYn'] && selectedEquipmentDetails['notiMsgAgreeYn'] == false) {
-CommonPopUp(
-outsideTouchDismissible: false,
-dragDismissible: false,
-context: context!,
-mainText: 'warning'.tr(),
-subText: 'app_warning_sub_title'.tr(),
-secondaryText: 'app_warning_second_contents'.tr(),
-firstButtonText: 'agree'.tr(),
-secondButtonText: 'not_agree'.tr(),
-onTapConfirm: () async {
-Navigator.pop(context!);
-await updateNotiMsgAgreeYn(true);
-selectEquipment(curSelectedEquipIndex.value);
-},
-onTapCancel: () {
-logOut!();
-exit(0);
-}).pop();
-}
