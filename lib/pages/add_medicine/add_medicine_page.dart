@@ -334,3 +334,122 @@ class PickImageBottomSheet extends StatelessWidget {
 //   setShowIndicator(false);
 //   setAuthKeyButtonInUse(false);
 // }
+
+
+/// ShowErr old methods
+
+// showErrorMsg(int errCode, String? errTitle) {
+//   if (kDebugMode) {
+//     print('+++ showErrorMsg:context : $context');
+//   }
+//
+//   if (context == null) {
+//     showErrorToast(getErrTitle(errCode, errTitle ?? 'err_err_in_process_title'.tr()), getErrMsg(errCode));
+//     if (errCode == 4190) {
+//       if (logOut != null) {
+//         logOut!();
+//       } else {
+//         mainControllerOnLogOut();
+//         Get.offAll(() => const LogInPage());
+//       }
+//     }
+//     return;
+//   }
+//
+//   CommonPopUp(
+//     dragDismissible: errCode != 4190,
+//     outsideTouchDismissible: errCode != 4190,
+//     context: context!,
+//     mainText: getErrTitle(errCode, errTitle ?? 'err_err_in_process_title'.tr()),
+//     secondaryText: getErrMsg(errCode),
+//     onTapConfirm: () {
+//       Navigator.pop(context!);
+//       if (errCode == 4190) {
+//         // 로그 아웃 상황
+//         if (logOut != null) {
+//           logOut!();
+//         } else {
+//           mainControllerOnLogOut();
+//           Get.offAll(() => const LogInPage());
+//         }
+//       }
+//     },
+//   ).pop();
+// }
+//
+// String getErrTitle(int errCode, errTitle) {
+//   switch (errCode) {
+//     case 4000:
+//       errTitle = 'err_parameter_not_matched_title'.tr();
+//       break;
+//     case 4010:
+//       errTitle = 'err_api_auth_fail_title'.tr();
+//       break;
+//     case 4011:
+//       errTitle = 'err_trace_id_missed_title'.tr();
+//       break;
+//     case 4012:
+//       errTitle = 'err_session_key_missed_title'.tr();
+//       break;
+//     case 4190:
+//       errTitle = 'err_session_timeout_title'.tr();
+//       break;
+//     case 5000:
+//       errTitle = 'err_err_in_process_title'.tr();
+//       break;
+//     case 5040:
+//       errTitle = 'err_destination_timeout_title'.tr();
+//       break;
+//     case 5041:
+//       errTitle = 'err_user_response_timeout_title'.tr();
+//       break;
+//     case 5042:
+//       errTitle = 'err_device_response_timeout_title'.tr();
+//       break;
+//     case 9000:
+//       errTitle = 'err_system_check_title'.tr();
+//       break;
+//     case 5130:
+//       errTitle = 'device_id_mismatch_while_using'.tr();
+//       break;
+//   }
+//   return errTitle;
+// }
+//
+// String getErrMsg(int errCode) {
+//   String errMsg = '';
+//
+//   switch (errCode) {
+//     case 4000:
+//     case 4010:
+//     case 4011:
+//     case 4012:
+//     case 5000:
+//     case 5041:
+//     case 5042:
+//     case 5040:
+//       errMsg = 'try_function_contents'.tr(); // 다시 시도
+//       break;
+//     case 4190:
+//     case 5130:
+//       errMsg = 'app_session_timeout_contents'.tr(); // 다시 로그인
+//       break;
+//     case 9000:
+//       errMsg = 'system_check_time_contents'.tr(); // 서버 점검 시간
+//       break;
+//   }
+//
+//   return errMsg;
+// }
+//
+// void showErrorToast(String errorTitle, String errorMessage) {
+//   Fluttertoast.showToast(
+//     backgroundColor: kToastBackGroundColor,
+//     textColor: kBlackColor,
+//     msg: "$errorTitle $errorMessage",
+//     fontSize: 14.0,
+//     toastLength: Toast.LENGTH_LONG,
+//     gravity: ToastGravity.BOTTOM,
+//     timeInSecForIosWeb: 2,
+//   );
+// }
