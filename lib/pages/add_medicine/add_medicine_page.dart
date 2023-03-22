@@ -218,6 +218,8 @@ class PickImageBottomSheet extends StatelessWidget {
 
 /// Auth key old methods:
 
+
+
 // Future<void> getAuthKey() async {
 //   String facilityNumb = equipmentList[curSelectedEquipIndex.value]['facilityNum'];
 //   setAuthKeyButtonInUse(true);
