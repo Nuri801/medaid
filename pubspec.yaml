@@ -39,6 +39,7 @@ dependencies:
   image_picker: ^0.8.6
   connectivity_plus: ^3.0.3
   encrypt: ^5.0.1
+  flutter_inappwebview: ^5.7.2+3
 
 dev_dependencies:
   flutter_test:
