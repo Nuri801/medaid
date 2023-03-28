@@ -1,7 +1,21 @@
-
 import 'package:encrypt/encrypt.dart';
+import 'dart:convert';
+import 'dart:collection';
 
 void main() {
+
+  // // void overwrite() {
+  //   var password = ['p', 'a', 's', 's'];
+  //   var target = String.fromCharCode(0x20);
+  //
+  //   print("origin password: ${String.fromCharCodes(password as Iterable<int>)}");
+  //   print("origin password hashcode: ${password.hashCode.toRadixString(16)}");
+  //
+  //   password.fillRange(0, password.length, target.codeUnitAt(0) as String?);
+  //
+  //   print("overwrite password: ${String.fromCharCodes(password as Iterable<int>)}");
+  //   print("overwrite password hashcode: ${password.hashCode.toRadixString(16)}");
+  // // }
   final plainText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
 
   final key = Key.fromSecureRandom(32);
@@ -15,7 +29,22 @@ void main() {
   print(encrypted.bytes);
   print(encrypted.base16);
   print(encrypted.base64);
+
 }
+
+// fun overwrite() {
+//   val password = charArrayOf('p','a','s','s',)
+//       val target = 0x20.toChar()
+//
+//   println("origin password: ${String(password)}")
+//   println("origin password hashcode: ${Integer.toHexString(password.hashCode())}")
+//
+//   Arrays.fill(password, target)
+//
+//   println("overwrite password: ${String(password)}")
+//   println("overwrite password hashcode: ${Integer.toHexString(password.hashCode())}")
+//
+// }
 
 // // import 'package:flutter/material.dart';
 // // import 'package:medaid/components/dory_themes.dart';
