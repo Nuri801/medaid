@@ -93,8 +93,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 //   //   print("overwrite password: ${String.fromCharCodes(password as Iterable<int>)}");
 //   //   print("overwrite password hashcode: ${password.hashCode.toRadixString(16)}");
 //   // // }
-//   final plainText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit';
-//
+
 //   final key = Key.fromSecureRandom(32);
 //   final iv = IV.fromSecureRandom(16);
 //   final encrypter = Encrypter(AES(key));
