@@ -82,11 +82,6 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // void main() {
 //
 
-//
-//
-//   //
-//   //   print("origin password: ${String.fromCharCodes(password as Iterable<int>)}");
-//   //   print("origin password hashcode: ${password.hashCode.toRadixString(16)}");
 //   //
 //   //   password.fillRange(0, password.length, target.codeUnitAt(0) as String?);
 //   //
