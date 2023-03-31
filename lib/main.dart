@@ -104,21 +104,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // // class MyApp extends StatelessWidget {
 // // //   const MyApp({super.key});
 // // //
-// // //   @override
-// // //   Widget build(BuildContext context) {
-// // //     return MaterialApp(
-// // //       debugShowCheckedModeBanner: false,
-// // //       title: 'MedAid',
-// // //       theme: DoryThemes.lightTheme,
-// // //       home: const HomePage(),
-// // //       builder: (context, child) => MediaQuery(
-// // //         data: MediaQuery.of(context).copyWith(textScaleFactor: 1.0),
-// // //         child: child!,
-// // //       ),
-// // //     );
-// // //   }
-// // // }
-// // //
+
 // //
 // // // main.dart
 // //
