@@ -86,11 +86,6 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 //   //   password.fillRange(0, password.length, target.codeUnitAt(0) as String?);
 
 //
-//   print(decrypted);
-//   print(encrypted.bytes);
-//   print(encrypted.base16);
-//   print(encrypted.base64);
-//
 // }
 //
 // // fun overwrite() {
