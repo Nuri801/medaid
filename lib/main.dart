@@ -88,17 +88,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 //
 // }
 //
-// // fun overwrite() {
-// //   val password = charArrayOf('p','a','s','s',)
-// //       val target = 0x20.toChar()
-// //
-// //   println("origin password: ${String(password)}")
-// //   println("origin password hashcode: ${Integer.toHexString(password.hashCode())}")
-// //
-// //   Arrays.fill(password, target)
-// //
-// //   println("overwrite password: ${String(password)}")
-// //   println("overwrite password hashcode: ${Integer.toHexString(password.hashCode())}")
+
 // //
 // // }
 //
