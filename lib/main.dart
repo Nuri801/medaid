@@ -132,22 +132,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //               return Scaffold(
 // // //                 body: Center(
 // // //                   child: Column(
-// // //                     mainAxisAlignment: MainAxisAlignment.center,
-// // //                     children: [
-// // //                       Text(snapshot.data.toString()),
-// // //                       ElevatedButton(
-// // //                           onPressed: () {
-// // //                             setState(() {});
-// // //                           },
-// // //                           child: const Text('REFRESH!'))
-// // //                     ],
-// // //                   ),
-// // //                 ),
-// // //               );
-// // //             }
-// // //           }),
-// // //
-{
+// // //                     mainAxisAlignment: MainAxisAlignment.cen
 
 // // //
 // // // class _HomeScreenState extends State<HomeScreen> {
