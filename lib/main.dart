@@ -123,19 +123,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //   Widget build(BuildContext context) {
 // // //     return MaterialApp(
 // // //       // Remove the debug banner
-// // //       debugShowCheckedModeBanner: false,
-// // //       title: 'KindaCode.com',
-// // //       theme: ThemeData(
-// // //         primarySwatch: Colors.amber,
-// // //       ),
-// // //       home: const HomeScreen(),
-// // //     );
-// // //   }
-// // // }
-// // //
-// // // class HomeScreen extends StatefulWidget {
 
-// // // }
 // // //
 
 // // //
