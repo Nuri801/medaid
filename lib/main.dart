@@ -105,17 +105,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //   const MyApp({super.key});
 // // //
 
-// //
-// // // main.dart
-// //
-// // /// The original code for the medaid app is above this line. Everything below this line is experimental.
-// //
-// // // import 'package:flutter/material.dart';
-// //
-// // // void main() {
-// // //   runApp(const MyApp());
-// // // }
-// // //
+
 // // // class MyApp extends StatelessWidget {
 // // //   const MyApp({Key? key}) : super(key: key);
 // // //
