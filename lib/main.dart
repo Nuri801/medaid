@@ -129,20 +129,6 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //   // In other words, this means the user has reached the bottom of the list view
 // // //   double? _maxOffset;
 // // //
-// // //
-// // //   @override
-// // //   void initState() {
-// // //     _controller.addListener(() {
-// // //       _maxOffset = _controller.position.maxScrollExtent;
-// // //       setState(() {
-// // //         _scrollOffset = _controller.offset;
-// // //         if (_maxOffset != null && _scrollOffset >= _maxOffset!) {
-// // //           ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
-// // //               content: Text('You have reached the end of the list view')));
-// // //         } else {
-// // //           ScaffoldMessenger.of(context).removeCurrentSnackBar();
-// // //         }
-// // //       });
 // // //     });
 // // //
 // // //     super.initState();
