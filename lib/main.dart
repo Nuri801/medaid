@@ -106,13 +106,6 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //
 
 
-// // // class MyApp extends StatelessWidget {
-// // //   const MyApp({Key? key}) : super(key: key);
-// // //
-// // //   @override
-// // //   Widget build(BuildContext context) {
-// // //     return MaterialApp(
-// // //       // Remove the debug banner
 
 // // //
 
