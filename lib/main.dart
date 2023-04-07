@@ -134,11 +134,6 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //     super.initState();
 // // //   }
 // // //
-// // //   // Discards any resources used by the scroll controller object
-// // //   @override
-// // //   void dispose() {
-// // //     _controller.dispose();
-// // //     super.dispose();
 // // //   }
 // // //         // attact the controller
 // // //         controller: _controller,
