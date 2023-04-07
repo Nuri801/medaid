@@ -113,13 +113,6 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 
 
 // // //
-// // // class _HomeScreenState extends State<HomeScreen> {
-// // //   // Generate dummy data to fill the list view
-// // //   final List _items = List.generate(50, (index) => 'Item $index');
-// // //
-// // //   // The controller that is assigned to the list view
-// // //   final ScrollController _controller = ScrollController();
-// // //
 // // //
 // // //   // The scroll offset
 // // //   double _scrollOffset = 0;
