@@ -140,13 +140,6 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //     _controller.dispose();
 // // //     super.dispose();
 // // //   }
-// // //
-// // //   @override
-// // //   Widget build(BuildContext context) {
-// // //     return Scaffold(
-// // //       appBar: AppBar(title: const Text('KindaCode.com')),
-// // //       // implement the list view
-// // //       body: ListView.builder(
 // // //         // attact the controller
 // // //         controller: _controller,
 // // //         itemBuilder: ((context, index) => Card(
