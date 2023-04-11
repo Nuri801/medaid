@@ -105,15 +105,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 
 // // //
 // // //
-// // //   // The scroll offset
-// // //   double _scrollOffset = 0;
-// // //
-// // //   // The maximum scroll offset
-// // //
-// // //   // In other words, this means the user has reached the bottom of the list view
-// // //   double? _maxOffset;
-// // //
-// // //     });
+
 // // //
 // // //     super.initState();
 // // //   }
