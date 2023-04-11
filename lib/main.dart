@@ -110,18 +110,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //     super.initState();
 // // //   }
 // // //
-// // //   }
-// // //         // attact the controller
-// // //         controller: _controller,
-// // //         itemBuilder: ((context, index) => Card(
-// // //           key: ValueKey(_items[index]),
-// // //           margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 15),
-// // //           elevation: 6,
-// // //           color: Colors.amber.shade100,
-// // //           child: ListTile(
-// // //             title: Text(_items[index]),
-// // //           ),
-// // //         )),
+
 // // //         itemCount: _items.length,
 // // //       ),
 // // //       // display the scroll offset
