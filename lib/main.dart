@@ -111,10 +111,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
 // // //   }
 // // //
 
-// // //         itemCount: _items.length,
-// // //       ),
-// // //       // display the scroll offset
-// // //       bottomNavigationBar: BottomAppBar(
+
 // // //         elevation: 6,
 // // //         // set the background color of the bottom bar based on the the current offset position
 // // //         // if at the top: green
