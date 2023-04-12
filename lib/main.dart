@@ -21,8 +21,6 @@ class PasswordInputPage extends StatefulWidget {
   _PasswordInputPageState createState() => _PasswordInputPageState();
 }
 
-
-
 class _PasswordInputPageState extends State<PasswordInputPage> {
   final TextEditingController _passwordController = TextEditingController();
   bool _passwordIsValid = false;
