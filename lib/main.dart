@@ -14,8 +14,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
-
 class PasswordInputPage extends StatefulWidget {
   @override
   _PasswordInputPageState createState() => _PasswordInputPageState();
