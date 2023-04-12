@@ -33,7 +33,6 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
     });
   }
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
