@@ -78,12 +78,7 @@ class _PasswordInputPageState extends State<PasswordInputPage> {
   }
 }
 
-//
-// void main() {
-//
 
-//   //
-//   //   password.fillRange(0, password.length, target.codeUnitAt(0) as String?);
 
 //
 // }
