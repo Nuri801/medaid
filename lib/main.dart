@@ -76,12 +76,6 @@ class MyApp extends StatelessWidget {
 // // //
 
 
-// // //         elevation: 6,
-// // //         // set the background color of the bottom bar based on the the current offset position
-// // //         // if at the top: green
-// // //         // if at the bottom: red
-// // //         // otherwise: blue
-// // //         color: _scrollOffset <= 0
 // // //             ? Colors.green
 // // //             : _maxOffset != null && _scrollOffset >= _maxOffset!
 // // //             ? Colors.red
