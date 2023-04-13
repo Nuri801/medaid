@@ -94,18 +94,6 @@ class MyApp extends StatelessWidget {
 // // // }
 // //
 // //
-// // // ignore_for_file: public_member_api_docs
-// //
-// // import 'dart:async';
-// // import 'dart:developer' as developer;
-// //
-// // import 'package:connectivity_plus/connectivity_plus.dart';
-// // import 'package:flutter/material.dart';
-// // import 'package:flutter/services.dart';
-// //
-// // void main() {
-// //   runApp(const MyApp());
-// // }
 // //
 // //
 // // class MyApp extends StatelessWidget {
