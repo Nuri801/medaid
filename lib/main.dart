@@ -16,16 +16,6 @@ class MyApp extends StatelessWidget {
 
 
 
-class _PasswordInputPageState extends State<PasswordInputPage> {
-  final TextEditingController _passwordController = TextEditingController();
-  bool _passwordIsValid = false;
-
-  void _checkPasswordValidity(String value) {
-    setState(() {
-      _passwordIsValid = value.isNotEmpty && value.length >= 6;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
