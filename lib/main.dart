@@ -106,14 +106,7 @@ class MyApp extends StatelessWidget {
 // //   ConnectivityResult _connectionStatus = ConnectivityResult.none;
 // //   final Connectivity _connectivity = Connectivity();
 // //   late StreamSubscription<ConnectivityResult> _connectivitySubscription;
-// //
-// //   @override
-// //   void initState() {
-// //     super.initState();
-// //     initConnectivity();
-// //     _connectivitySubscription =
-// //         _connectivity.onConnectivityChanged.listen(_updateConnectionStatus);
-// //   }
+
 // //
 // //   @override
 // //   void dispose() {
