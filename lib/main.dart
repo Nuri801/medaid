@@ -76,22 +76,6 @@ class MyApp extends StatelessWidget {
 // // //
 
 
-// // //             ? Colors.green
-// // //             : _maxOffset != null && _scrollOffset >= _maxOffset!
-// // //             ? Colors.red
-// // //             : Colors.blue,
-// // //         child: Padding(
-// // //           padding: const EdgeInsets.only(top: 20, left: 20),
-// // //           child: Text(
-// // //             "Offset: ${_scrollOffset.toString()}",
-// // //             style: const TextStyle(
-// // //                 fontSize: 21, color: Colors.white, fontWeight: FontWeight.bold),
-// // //           ),
-// // //         ),
-// // //       ),
-// // //     );
-
-
 // //
 // // class MyHomePage extends StatefulWidget {
 // //   const MyHomePage({Key? key, required this.title}) : super(key: key);
