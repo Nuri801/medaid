@@ -89,14 +89,7 @@ class MyApp extends StatelessWidget {
 // //
 // //   }
 // //
-// //   Future<void> initConnectivity() async {
-// //     late ConnectivityResult result;
-// //     try {
-// //       result = await _connectivity.checkConnectivity();
-// //     } on PlatformException catch (e) {
-// //       developer.log('Couldn\'t check connectivity status', error: e);
-// //       return;
-// //     }
+
 // //
 // //     if (!mounted) {
 // //       return Future.value(null);
