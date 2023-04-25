@@ -104,16 +104,6 @@ class MyApp extends StatelessWidget {
 // //     });
 // //   }
 // //
-// //   @override
-// //   Widget build(BuildContext context) {
-// //
-// //     return Scaffold(
-// //       appBar: AppBar(
-// //         title: const Text('Connectivity example'),
-// //       ),
-// //       body: Center(
-// //           child: Text('Connection Status: ${_connectionStatus.toString()}')),
-// //     );
-// //   }
+
 // //
 // // }
