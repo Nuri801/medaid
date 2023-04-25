@@ -79,10 +79,7 @@ class MyApp extends StatelessWidget {
 // //
 
 // //
-// // class _MyHomePageState extends State<MyHomePage> {
-// //   ConnectivityResult _connectionStatus = ConnectivityResult.none;
-// //   final Connectivity _connectivity = Connectivity();
-// //   late StreamSubscription<ConnectivityResult> _connectivitySubscription;
+
 
 // //
 // //   @override
