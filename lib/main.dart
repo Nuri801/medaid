@@ -68,26 +68,7 @@ class MyApp extends StatelessWidget {
 
 
 // // //
-// // //
 
-// // //
-// // //     super.initState();
-// // //   }
-// // //
-
-
-// //
-
-// //
-
-
-// //
-// //   @override
-// //   void dispose() {
-// //     _connectivitySubscription.cancel();
-// //     super.dispose();
-// //
-// //   }
 // //
 
 // //
