@@ -91,19 +91,4 @@ class MyApp extends StatelessWidget {
 // //
 
 // //
-// //     if (!mounted) {
-// //       return Future.value(null);
-// //     }
-// //
-// //     return _updateConnectionStatus(result);
-// //   }
-// //
-// //   Future<void> _updateConnectionStatus(ConnectivityResult result) async {
-// //     setState(() {
-// //       _connectionStatus = result;
-// //     });
-// //   }
-// //
-
-// //
 // // }
