@@ -20,10 +20,8 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
 
   @override
   void dispose() {
-
     _nameController.dispose();
     super.dispose();
-
   }
 
   @override
