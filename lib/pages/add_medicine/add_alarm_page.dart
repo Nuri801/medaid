@@ -51,8 +51,6 @@ class AddAlarmPage extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: [
-          medicineImage == null ? Container() : Image.file(medicineImage!),
-          Text(medicineName),
         ],
       ),
     );
