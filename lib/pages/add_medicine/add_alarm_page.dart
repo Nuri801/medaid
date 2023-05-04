@@ -26,7 +26,7 @@ class AddAlarmPage extends StatelessWidget {
     return Scaffold(
 
       appBar: AppBar(),
-      body: pageUI(),
+      body: Container(),
       bottomNavigationBar: SafeArea(
         child: Padding(
           padding: submitButtonBoxPadding,
@@ -45,16 +45,4 @@ class AddAlarmPage extends StatelessWidget {
     );
 
   }
-
-  Widget pageUI() {
-
-    return SafeArea(
-      child: Column(
-        children: [
-        ],
-      ),
-    );
-
-  }
-
 }
