@@ -12,7 +12,6 @@ class AddAlarmPage extends StatelessWidget {
 
   final File? medicineImage;
   final String medicineName;
-
   late double deviceHeight;
   late double deviceWidth;
 
@@ -22,7 +21,6 @@ class AddAlarmPage extends StatelessWidget {
     deviceWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
-
       appBar: AppBar(),
       body: Container(),
       bottomNavigationBar: SafeArea(
