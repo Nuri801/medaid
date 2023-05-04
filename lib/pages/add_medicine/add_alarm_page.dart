@@ -5,11 +5,9 @@ import '../../components/dory_constants.dart';
 
 class AddAlarmPage extends StatelessWidget {
   AddAlarmPage({
-
     Key? key,
     required this.medicineImage,
     required this.medicineName,
-
   }) : super(key: key);
 
   final File? medicineImage;
