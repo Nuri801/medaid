@@ -99,15 +99,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
   }
 
   // void _onAddAlarmPage() {
-  //   Navigator.push(
-  //     context,
-  //     FadePageRoute(
-  //       page: AddAlarmPage(
-  //         medicineImage: _medicineImage,
-  //         medicineName: _nameController.text,
-  //       ),
-  //     ),
-  //   );
+
   // }
 }
 
