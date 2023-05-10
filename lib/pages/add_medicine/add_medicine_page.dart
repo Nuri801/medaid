@@ -140,19 +140,6 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
 
   }
 
-  void _showModelBottomSheet() {
-    showModalBottomSheet(
-      context: context,
-      builder: (context) {
-        return PickImageBottomSheet(
-          onPressedCamera: () => _onPressed(ImageSource.camera),
-          onPressedGallery: () => _onPressed(ImageSource.gallery),
-        );
-      },
-    );
-
-  }
-
   void _onPressed(ImageSource source) {
     Navigator.maybePop(context);
     ImagePicker().pickImage(source: source).then(
