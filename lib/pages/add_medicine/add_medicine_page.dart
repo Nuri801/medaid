@@ -297,7 +297,9 @@ class PickImageBottomSheet extends StatelessWidget {
 //   setAuthKeyButtonInUse(false);
 // }
 
+
 /// ShowErr old methods
+
 
 // showErrorMsg(int errCode, String? errTitle) {
 //   if (kDebugMode) {
