@@ -123,17 +123,7 @@ class _MedicineImageButtonState extends State<MedicineImageButton> {
     return CircleAvatar(
       radius: 40,
       child: CupertinoButton(
-        onPressed: _showModelBottomSheet,
-        padding: _pickedImage == null ? null : EdgeInsets.zero,
-        child: _pickedImage == null
-            ? const Icon(
-                CupertinoIcons.photo_camera_solid,
-                size: 30,
-                color: Colors.white,
-              )
-            : CircleAvatar(
-                radius: 40,
-                foregroundImage: FileImage(_pickedImage!),
+
               ),
       ),
     );
