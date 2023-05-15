@@ -73,7 +73,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
                   contentPadding: textFieldContentPadding,
                 ),
                 onChanged: (_) => setState(() {}),
-
               ),
             ],
           ),
@@ -97,10 +96,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
       ),
     );
   }
-
-  // void _onAddAlarmPage() {
-
-  // }
 }
 
 class MedicineImageButton extends StatefulWidget {
