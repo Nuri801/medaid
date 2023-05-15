@@ -3,8 +3,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:medaid/components/dory_constants.dart';
-import 'package:medaid/components/dory_page_route.dart';
-import 'package:medaid/pages/add_medicine/add_alarm_page.dart';
 
 class AddMedicinePage extends StatefulWidget {
   const AddMedicinePage({Key? key}) : super(key: key);
