@@ -390,7 +390,6 @@ class PickImageBottomSheet extends StatelessWidget {
 //       errMsg = 'system_check_time_contents'.tr(); // 서버 점검 시간
 //       break;
 //   }
-//
 //   return errMsg;
 // }
 //
