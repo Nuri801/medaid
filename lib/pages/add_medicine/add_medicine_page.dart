@@ -76,9 +76,6 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
             ],
           ),
         ),
-
-
-
         bottomNavigationBar: SafeArea(
           child: Padding(
             padding: submitButtonBoxPadding,
