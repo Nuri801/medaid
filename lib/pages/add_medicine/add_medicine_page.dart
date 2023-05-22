@@ -168,11 +168,7 @@ class PickImageBottomSheet extends StatelessWidget {
   }
 }
 
-
-
 /// Auth key old methods:
-///
-///
 
 // Future<void> getAuthKey() async {
 //   String facilityNumb = equipmentList[curSelectedEquipIndex.value]['facilityNum'];
@@ -293,13 +289,7 @@ class PickImageBottomSheet extends StatelessWidget {
 //   setAuthKeyButtonInUse(false);
 // }
 
-
-
-
 /// ShowErr old methods
-
-
-
 
 // showErrorMsg(int errCode, String? errTitle) {
 //   if (kDebugMode) {
@@ -318,7 +308,6 @@ class PickImageBottomSheet extends StatelessWidget {
 //     }
 //     return;
 //   }
-//
 //   CommonPopUp(
 //     dragDismissible: errCode != 4190,
 //     outsideTouchDismissible: errCode != 4190,
