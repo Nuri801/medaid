@@ -109,13 +109,6 @@ class MedicineImageButton extends StatefulWidget {
 class _MedicineImageButtonState extends State<MedicineImageButton> {
   var _pickedImage;
 
-  @override
-  Widget build(BuildContext context) {
-
-    return Container(color: Colors.amber,);
-
-  }
-
   void _onPressed(ImageSource source) {
     Navigator.maybePop(context);
     ImagePicker().pickImage(source: source).then(
