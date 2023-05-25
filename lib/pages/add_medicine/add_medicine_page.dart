@@ -39,12 +39,7 @@ class _AddMedicinePageState extends State<AddMedicinePage> {
           padding: pagePadding,
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              // const SizedBox(height: largeSpace),
-              Text(
-                '어떤 약이예요 ?',
-                style: Theme.of(context).textTheme.headline4,
-              ),
+            children: []
               const SizedBox(height: largeSpace),
               Center(
                 child: MedicineImageButton(
