@@ -375,16 +375,3 @@ class PickImageBottomSheet extends StatelessWidget {
 //   }
 //   return errMsg;
 // }
-
-
-// void showErrorToast(String errorTitle, String errorMessage) {
-//   Fluttertoast.showToast(
-//     backgroundColor: kToastBackGroundColor,
-//     textColor: kBlackColor,
-//     msg: "$errorTitle $errorMessage",
-//     fontSize: 14.0,
-//     toastLength: Toast.LENGTH_LONG,
-//     gravity: ToastGravity.BOTTOM,
-//     timeInSecForIosWeb: 2,
-//   );
-// }
