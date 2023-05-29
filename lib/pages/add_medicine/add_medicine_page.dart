@@ -274,10 +274,6 @@ class PickImageBottomSheet extends StatelessWidget {
 
 
 
-// showErrorMsg(int errCode, String? errTitle) {
-//   if (kDebugMode) {
-//     print('+++ showErrorMsg:context : $context');
-//   }
 //
 //   if (context == null) {
 //     showErrorToast(getErrTitle(errCode, errTitle ?? 'err_err_in_process_title'.tr()), getErrMsg(errCode));
